@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <main>
+    <form>
+      <label for="day">
+         <span class="  Error-active">Day</span>
+         <input type="number" name="day"  id="day" min="1" max="31" placeholder="DD" onclick=" verificarCampos()" >
+         <span class="error Error-active">Must be a valid day</span>
+      </label>
+      <label for="month">
+        <span  class= " Error-active">Month</span>
+         <input type="number" name="month" id="month" min="1" max="12" placeholder="MM">
+         <span class="error   Error-active">Must be a valid Month</span>
+      </label>
+      <label for="years">
+        <span  class=" Error-active">Year</span>
+         <input type="number" name="years" id="years" min="1900" max="2050" placeholder="YYYY">
+         <span class="error  Error-active">Must be a valid Year</span>
+      </label> 
+
+      <div class="line"></div>
+
+      <button type="submit"  id="sub"><img src="/assets/images/icon-arrow.svg" alt="arrow"></button>
+     </form>
+ 
+     <div class="age-zone">
+         <div class="years"> 
+             <h2>
+               <span class="purple" id="yearsNum">- -</span> years 
+             </h2>
+         </div>
+         <div class="months">
+             <h2>
+               <span  class="purple"  id="monthsNum">- -</span> months 
+             </h2>
+         </div>
+         <div class="days">
+             <h2>
+               <span  class="purple"  id="dayNum">- -</span> days
+             </h2>
+         </div>
+     </div>
+  </main>
+  
+</body>
+<script src="js/age-calculato.js"></script>
+</html>

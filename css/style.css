@@ -1,0 +1,187 @@
+* {
+ margin:0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+ font-size: 100%;
+}
+
+
+/*root Colors*/
+
+:root { 
+--Purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+--White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--Light-grey);
+}
+
+
+
+
+main {
+    margin: 5rem auto;
+    width: 346px;
+    height: 482px;
+    background-color: var(--White);
+    border-radius: 15px 15px 125px 15px;
+}
+
+label  > span {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--Smokey-grey);
+}
+
+label > .error  {
+    opacity: 0%;
+    position: absolute;
+    font-size: 7px;
+    margin-top: 115px;
+    margin-left: -94px;
+}
+
+label > .error.er {
+    color: var(--Light-red);
+    opacity: 100%;
+} 
+
+
+
+
+input[type="number"] {
+    margin: 57px 7px 25px 15px;
+    width: 85px;
+    height: 50px;
+    border-radius: 10px;
+    border:  1px solid gainsboro;
+}
+
+input::placeholder {
+    padding-left: -105px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #000;
+}
+
+input {
+ text-align: left;
+ padding-left: 15px;
+}
+
+.line {
+    width: 85%;
+    height: 2px;
+    background-color: var(--Off-white);
+    margin-left: 25px;
+    margin-top: 27px;
+}
+
+button {
+    content: '';
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border: none;
+    border-radius:50%;
+    background-color: var(--Purple);
+    top: -27px;
+    left: 40%;  
+}
+
+
+
+.purple {
+    color: var(--Purple);
+    animation: type_effect 2.5s steps(11,end) infinite;
+    animation-delay: 0.3s;
+}
+
+
+@keyframes type_effect {
+    0% {
+       
+        opacity: 0%;
+    }
+    100% {
+       
+        opacity: 100%;
+    }
+}
+
+button:hover {
+  background-color: #000;
+}
+
+.age-zone {
+    font-size: 55px;
+    line-height: 55px;
+    margin-left: 20px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+/**/
+/**/
+/**/
+
+
+@media (min-width: 1440px) {
+    main {
+        margin: 10rem auto;
+        width: 740px;
+        height: 520px;
+    }
+
+    
+label  > span {
+    margin-left: 43px;
+    margin-top: 45px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--Smokey-grey);
+}
+
+input[type="number"] {
+    margin: 85px 5px 25px 35px;
+    width: 155px;
+    height: 75px;
+}
+
+button {
+    top: -25px;
+    left: 83%;  
+}
+
+.age-zone {
+    margin-top: -45px;
+    font-size: 75px;
+    line-height: 75px;
+    margin-left: 40px;
+}
+
+input::placeholder {
+    font-size: 25px;
+}
+
+label > .error {
+    margin-left: -160px;
+    text-transform: lowercase;
+    position: absolute;
+    font-size: 13px;
+    margin-top: 170px;
+
+}
+
+}
