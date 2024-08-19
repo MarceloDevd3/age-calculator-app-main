@@ -7,54 +7,27 @@ const btnSubmit = document.querySelector('form')
 
 //submit form
 
-
-
-
- 
-    
-  
-
-
-
 // preciso de ajudar para concertar a parte dos mese se poder me ajudar eu agradeceria muito
 
 btnSubmit.addEventListener('submit', function(e) {
 
 e.preventDefault();
 
-
-
-
-
 const myBirthDay = document.getElementById('day').value
 const myMonthDay = document.getElementById('month').value
 const myYearsDay = document.getElementById('years').value
 
-
-
-//console.log(myBirthDay)
-
-
-//console.log(myMonthDay)
-//console.log(myYearsDay)
-
-
-
-
 // essa parte resolve a idade de uma pessoa que ja fez aniversario e de quem vai fazer 
 
-
 let birthMonth =  myMonthDay;
-
 let atualMonth = atualDate.getMonth()
-
 let idade = atualDate.getFullYear();
-
 let anodeNascimento = myYearsDay
-
 let dataDoNascimento = myBirthDay ;
 
-if( birthMonth > atualMonth ) {
+console.log(7 > 5)
+
+if(atualMonth > birthMonth) {
   idade--
   let result = idade - anodeNascimento
   let yearsTxt = document.getElementById('yearsNum').innerText = result;
@@ -77,8 +50,7 @@ if(birthMonth > atualMonth) {
 function dayInAMonthOfLife(ano, mes) {
   const day = new Date(ano, mes,0);
   const daysInAMonth =  day.getDate() - dataDoNascimento + atualDate.getDate() 
-  let daysOfLife =  document.getElementById('dayNum').innerText = daysInAMonth;
-  
+  let daysOfLife =  document.getElementById('dayNum').innerText = daysInAMonth;  
 }
 
 

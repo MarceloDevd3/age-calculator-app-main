@@ -56,9 +56,6 @@ label > .error.er {
     opacity: 100%;
 } 
 
-
-
-
 input[type="number"] {
     margin: 57px 7px 25px 15px;
     width: 85px;
@@ -130,12 +127,6 @@ button:hover {
     font-weight: 800;
     font-style: italic;
 }
-
-
-/**/
-/**/
-/**/
-
 
 @media (min-width: 1440px) {
     main {

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 100%;
+}
+
+body {
+  background-color: hsl(0, 0%, 86%);
+}
+body main {
+  margin: 5rem auto;
+  width: 346px;
+  height: 482px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px 15px 125px 15px;
+}
+
+form label > span {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+}
+form label > .error {
+  opacity: 0%;
+  position: absolute;
+  font-size: 7px;
+  margin-left: 115px;
+  margin-top: -94px;
+}
+form label > .error.er {
+  color: hsl(0, 100%, 67%);
+  opacity: 100%;
+}
+form input[type=number] {
+  margin: 57px 7px 25px 15px;
+  width: 85px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid gainsboro;
+}
+form input {
+  text-align: left;
+  padding-left: 15px;
+}
+form input::placeholder {
+  padding-left: -105px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000;
+}
+form .line {
+  width: 85%;
+  height: 2px;
+  background-color: hsl(0, 0%, 94%);
+  margin-left: 25px;
+  margin-top: 27px;
+}
+form button {
+  content: "";
+  position: relative;
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(259, 100%, 65%);
+  top: -27px;
+  left: 40%;
+}
+@keyframes type_effect {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+form button:hover {
+  background-color: #000;
+}
+
+.age-zone {
+  font-size: 55px;
+  line-height: 55px;
+  margin-left: 20px;
+  font-weight: 800;
+  font-style: italic;
+}
+.age-zone .purple {
+  color: hsl(259, 100%, 65%);
+  animation: type_effect 2.5s steps(11, end) infinite;
+  animation-delay: 0.3s;
+}
+
+/*# sourceMappingURL=custom.css.map */

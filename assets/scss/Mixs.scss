@@ -1,0 +1,26 @@
+
+
+@mixin Font-size($size) {
+    font-size: $size;
+   }
+
+@mixin LeftAndTop($left, $right) {
+    margin-left: $left;
+    margin-top: $right;
+}
+
+@mixin WidthAndHeight($width, $height) {
+   width: $width;
+   height: $height;
+}
+
+@mixin PaddingLeft($Pd-left) {
+    padding-left: $Pd-left;
+ }
+
+ @mixin Font-weight($weight) {
+  font-weight: $weight;
+ }
+
+
+
