@@ -1,0 +1,54 @@
+@import "./Root_Colors.scss";
+@import "./Mixs.scss";
+
+@media (min-width: 778px) {
+    body {
+        main {
+            margin: 4.5rem auto;
+            @include WidthAndHeight(740px , 520px);
+        }  
+    }
+
+    form {
+        label  > span {
+            
+            @include LeftAndTop(43px, 45px);
+            text-transform: uppercase;
+            @include Font-weight(600);
+            color: $Smokey-grey;
+        }
+        
+      
+        input[type="number"] {
+            margin: 85px 5px 25px 35px;
+            @include WidthAndHeight(155px , 75px);
+        }
+        
+        button {
+            top: -25px;
+            left: 83%;  
+        }
+
+        
+        input::placeholder {
+        @include Font-size(25px);
+        }
+        
+        label > .error {
+            text-transform: lowercase;
+            position: absolute;
+            @include Font-size(13px);
+            @include LeftAndTop(-160px, 170px);
+        
+        }
+        
+    }
+
+
+    .age-zone {
+        @include LeftAndTop(40px, -45px);
+        font-size: 75px;
+        line-height: 75px;
+    }
+    
+}

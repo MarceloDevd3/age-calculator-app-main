@@ -15,16 +15,16 @@
   <main>
     <form>
       <label for="day">
-         <span class="  Error-active">Day</span>
-         <input type="number" name="day"  id="day" min="1" max="31" placeholder="DD" onclick=" verificarCampos()" >
+         <span class="Error-active">Day</span>
+         <input class="day" type="number" name="day" id="day" min="1" max="31" placeholder="DD" >
          <span class="error Error-active">Must be a valid day</span>
       </label>
-      <label for="month">
+      <label for="month" class="month">
         <span  class= " Error-active">Month</span>
          <input type="number" name="month" id="month" min="1" max="12" placeholder="MM">
          <span class="error   Error-active">Must be a valid Month</span>
       </label>
-      <label for="years">
+      <label for="years" class="years">
         <span  class=" Error-active">Year</span>
          <input type="number" name="years" id="years" min="1900" max="2050" placeholder="YYYY">
          <span class="error  Error-active">Must be a valid Year</span>
@@ -55,5 +55,9 @@
   </main>
   
 </body>
-<script src="js/age-calculato.js"></script>
+
+
+<script src="js/CleanCode.js"></script>
+<!--
+<script src="js/AgeCalculator.js"></script>-->
 </html>

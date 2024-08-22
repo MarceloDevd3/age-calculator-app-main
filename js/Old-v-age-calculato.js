@@ -2,7 +2,6 @@
 
 const atualDate = new Date()
 
-
 const btnSubmit = document.querySelector('form')
 
 //submit form
@@ -25,8 +24,6 @@ let idade = atualDate.getFullYear();
 let anodeNascimento = myYearsDay
 let dataDoNascimento = myBirthDay ;
 
-console.log(7 > 5)
-
 if(atualMonth > birthMonth) {
   idade--
   let result = idade - anodeNascimento
@@ -47,9 +44,21 @@ if(birthMonth > atualMonth) {
 
 // calcular dias de vida ate agora 
 
+const maxDays = (ano, mes) => {
+   return new Date(ano, mes,0).getDate();
+}
+
+const maxDaysMonth =   maxDays(myYearsDay, myMonthDay)
+
 function dayInAMonthOfLife(ano, mes) {
   const day = new Date(ano, mes,0);
   const daysInAMonth =  day.getDate() - dataDoNascimento + atualDate.getDate() 
+  console.log("dias de vida ate agora " + daysInAMonth)
+  if( daysInAMonth > maxDaysMonth ) {
+    
+  }
+  console.log("maximo de dias no mes atual: " + maxDaysMonth)
+
   let daysOfLife =  document.getElementById('dayNum').innerText = daysInAMonth;  
 }
 

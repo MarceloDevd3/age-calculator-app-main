@@ -96,4 +96,44 @@ form button:hover {
   animation-delay: 0.3s;
 }
 
+@media (min-width: 778px) {
+  body main {
+    margin: 4.5rem auto;
+    width: 740px;
+    height: 520px;
+  }
+  form label > span {
+    margin-left: 43px;
+    margin-top: 45px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: hsl(0, 1%, 44%);
+  }
+  form input[type=number] {
+    margin: 85px 5px 25px 35px;
+    width: 155px;
+    height: 75px;
+  }
+  form button {
+    top: -25px;
+    left: 83%;
+  }
+  form input::placeholder {
+    font-size: 25px;
+  }
+  form label > .error {
+    text-transform: lowercase;
+    position: absolute;
+    font-size: 13px;
+    margin-left: -160px;
+    margin-top: 170px;
+  }
+  .age-zone {
+    margin-left: 40px;
+    margin-top: -45px;
+    font-size: 75px;
+    line-height: 75px;
+  }
+}
+
 /*# sourceMappingURL=custom.css.map */

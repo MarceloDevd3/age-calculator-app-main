@@ -1,7 +1,6 @@
 @import "./Root_Colors.scss";
 @import "./Mixs.scss";
 
-
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +21,11 @@ body {
 }
 
 form {
+
+    
+
+  
+
     label > span{
             position: absolute;
             @include LeftAndTop(20px, 25px);
@@ -109,4 +113,7 @@ button:hover {
     }
     
 }
+
+
+@import "./Bigger_devices.scss";
 
